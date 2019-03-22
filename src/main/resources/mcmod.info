@@ -1,0 +1,16 @@
+[
+{
+  "modid": "HIVESTATS",
+  "name": "Hive Stats",
+  "description": "Show player hive stats",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://devras.info",
+  "updateUrl": "",
+  "authorList": ["kemasama"],
+  "credits": "kemasama",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
