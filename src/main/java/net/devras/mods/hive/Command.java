@@ -78,6 +78,7 @@ public class Command implements ICommand {
 		if (args.length > 1) {
 			name = args[1];
 			
+<<<<<<< HEAD
 			if (args[1].equalsIgnoreCase("setDefault")) {
 				
 				Main.defaultGame = name;
@@ -149,6 +150,10 @@ public class Command implements ICommand {
 				}
 				
 				final List<String> players = tmp;
+=======
+			if (args[1].equalsIgnoreCase("warning")) {
+				final List<EntityPlayer> players = Minecraft.getMinecraft().theWorld.playerEntities;
+>>>>>>> origin/master
 				final int warnPoint = (args.length > 2) ? Integer.parseInt(args[2]) : Main.warningPoints;
 
 				p.addChatMessage(new ChatComponentTranslation("§cWarning List Now loading..."));
@@ -158,15 +163,25 @@ public class Command implements ICommand {
 					@Override
 					public void run() {
 						HashMap<String, Default> Warn = new HashMap();
+<<<<<<< HEAD
 						for (String pl : players) {
 							try {
 								Default gm = Main.getStatus(pl, game);
+=======
+						for (EntityPlayer pl : players) {
+							try {
+								Default gm = Main.getStatus(pl.getName(), game);
+>>>>>>> origin/master
 								if (gm == null) {
 									continue;
 								}
 								int totalPoints = gm.getTotal_points();
 								if (totalPoints >= warnPoint) {
+<<<<<<< HEAD
 									Warn.put(pl, gm);
+=======
+									Warn.put(pl.getName(), gm);
+>>>>>>> origin/master
 								}
 							} catch (Exception e) {
 								e.printStackTrace();

@@ -7,8 +7,11 @@ public class Default {
 	public Default() {
 		this.total_points = 0;
 		this.title = "";
+<<<<<<< HEAD
 		this.kills = 0;
 		this.deaths = 0;
+=======
+>>>>>>> origin/master
 	}
 	
 	public int getTotal_points() {
@@ -23,6 +26,7 @@ public class Default {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+<<<<<<< HEAD
 	
 	
 	private int kills;
@@ -43,4 +47,6 @@ public class Default {
 	public void setDeaths(int deaths) {
 		this.deaths = deaths;
 	}
+=======
+>>>>>>> origin/master
 }

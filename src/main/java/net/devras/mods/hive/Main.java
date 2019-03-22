@@ -36,14 +36,21 @@ import net.minecraftforge.fml.relauncher.Side;
 @Mod(modid = Main.MODID, version = Main.VERSION)
 public class Main {
 	public static final String MODID = "HIVESTATS";
+<<<<<<< HEAD
 	public static final String VERSION = "2.6";
 	public static int warningPoints = 100000;
 	public static boolean autoCheck = true;
 	public static String defaultGame = "BED";
+=======
+	public static final String VERSION = "2.3";
+	public static int warningPoints = 100000;
+	public static boolean autoCheck = true;
+>>>>>>> origin/master
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		ClientCommandHandler.instance.registerCommand(new Command());
+<<<<<<< HEAD
 		MinecraftForge.EVENT_BUS.register(this);
 		//MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -64,6 +71,11 @@ public class Main {
 		}
 	}
 	
+=======
+		//MinecraftForge.EVENT_BUS.register(this);
+	}
+	
+>>>>>>> origin/master
 	public static void getStatus(final EntityPlayer p, final String name) {
 		final String path = String.format("http://api.hivemc.com/v1/player/%s", name);
 		new Thread(new Runnable() {
